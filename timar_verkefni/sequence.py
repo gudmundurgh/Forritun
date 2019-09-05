@@ -4,15 +4,13 @@
 #Sequence where first three are known 0,1,2. each after that is 
 #sum of last three
 
-#set the first 3 values from start
-#use a for loop
-
-# set first_num = 1 and second_num = 2
-# next is the sum of last two
+#ask for a number to determine the length of the sequence
+#start with first three that are known and print them out
+#iterate till n to add last three together and print next number
 n = int(input("Enter the number of integers in the sequence: "))
-third_from_i = 0
-second_from_i = 1
-next_from_i = 2
+third_from_i = 1
+second_from_i = 2
+next_from_i = 3
 print(third_from_i)
 print(second_from_i)
 print(next_from_i)
@@ -24,4 +22,3 @@ for i in range(4,n+1):
     second_from_i = next_from_i
     next_from_i = next_number_stored
     print(next_number)
-
